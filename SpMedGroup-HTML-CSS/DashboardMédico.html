@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="Pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Language" content="pt-br, en, fr, it">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=greek" rel="stylesheet">
+    <script src="Script.js"></script>
+    <link rel="icon" href="IMG/logo_spmedgroup_v1.png" />
+    <title>SpMedGroup</title>
+</head>
+
+<body>
+    <div class="geral">
+
+        <div class="geral" id="logo">
+            <img src="IMG/Group 21.png" alt="sloga">
+        </div>
+
+        <div id="icon">
+            <a href="https://pt-br.facebook.com/" target="blank"><img src="IMG/Icon-Facebook.png" alt=""></a>
+            <a href="https://twitter.com/explore" target="blank"><img src="IMG/Icon-Twitter.png" alt=""></a>
+            <a href="https://br.linkedin.com/" target="blank"> <img src="IMG/Icon-Linkedin.png" alt=""></a>
+            <a href="https://www.instagram.com/?hl=pt-br" target="blank"><img src="IMG/Icon-Instragram.png" alt=""></a>
+        </div>
+
+        <div class="geral" id="logo-clock">
+            <img src="IMG/ClockLogo.png" alt="">
+            <p>Horários de atendimento
+                <br><span> Segunda - Sexta 08:00 - 19:00
+                    <br>Sábado 08:00 - 18:00</span>
+            </p>
+        </div>
+
+        <div class="geral" id="contatos">
+            <img src="IMG/image 3.png" alt="">
+            <p>Telefones para contato
+                <span>
+                    <br>(11) 9876-54321
+                    <br>(11) 1234-5678
+                </span>
+            </p>
+        </div>
+
+        <div class="geral" id="local">
+            <img src="IMG/Local-Logo.png" alt="">
+            <p>Onde nós encontra</p>
+        </div>
+    </div>
+
+    <div id="faixa"></div>
+
+    <div id="banner">
+        <img src="IMG/Banner.png" alt="">
+    </div>
+
+    <div id="best">
+        <div id="nome">
+            <h1>Olá Médico Henrique</h1>
+        </div>
+        <div id="sair">
+            <a href="Index.html">Sair</a>
+        </div>
+    </div>
+    <div>
+        <div id="panel">
+            <h2>Minha ficha</h2>
+        </div>
+        <div id="med1">
+            <div id="med2">
+                <img src="IMG/Médico-Med.png" alt="">
+                <div id="med3">
+                    <p>
+                        Nome: Henrique M. Santos
+                        <br> Sexo: Masculino
+                        <br> Idade: 27 Anos
+                        <br> Trabalha Sp: 1 Anos e 6 meses
+                        <br> Especialidade: Cirurgião plástico
+                        <br> Endereço: Rua Sparta,132
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="double">
+        <div class="celula" id="rob1">
+            <div class="tick" id="tec1">
+                <p>consulta agenda</p>
+            </div>
+            <p>Ver as consultas agendadas
+                <br> para você o nome do paciente
+                <br> e a hora da consulta.</p>
+            <img src="IMG/Caderno-med.png" alt="">
+
+            <div class="botoes">
+                <input type="submit" value="Ver consultas" onclick="abrir('chilo','xerox')">
+            </div>
+        </div>
+
+        <div class="celula" id="rob2">
+            <div class="tick" id="tec2">
+                <p>Consultas realizadas </p>
+            </div>
+            <p>Ver atendimentos realizados
+                <br> na clínica e nome de paciente
+                <br> prontuário.</p>
+            <img src="IMG/Arquivos-med.png" alt="">
+
+            <div class="botoes">
+                <input type="submit" value="Historico" onclick="abrir('falcon','con')">
+            </div>
+        </div>
+
+        <div class="celula" id="rob3">
+            <div class="tick" id="tec3">
+                <p>Prontuário </p>
+            </div>
+            <p>Criar um novo prontuário ou
+                <br> consulta um já existente no
+                <br> sistema da clínica. </p>
+            <img src="IMG/Prontuario-med.png" alt="">
+
+            <div class="botoes">
+                <input type="submit" value="Criar prontuário" onclick="abrir('huk','per')">
+            </div>
+        </div>
+    </div>
+
+    <div id="slogan">
+        <h1>Sp <span>Medical Group</span></h1>
+    </div>
+
+    <div class="popup">
+        <div class="huk" id="per">
+            <div class="pop-header">
+                <img src="IMG/Group 21.png" alt="">
+                <button class="bot" onclick="fecha('huk')">&times;</button>
+            </div>
+
+            <div class="pop-text">
+                <p>Selecione uma das opçoes abaixo.</p>
+            </div>
+            <div>
+                <div class="fig">
+                    <div class="person" id="slider1" onclick="abrir('net','aspnet')">
+                        <img src="IMG/Pasta-icon-med.png" alt="">
+                        <p>Busca</p>
+                    </div>
+                    <div class="person" id="slider2" onclick="abrir('silve','raro')">
+                        <img src="IMG/Caderno-icon-med.png" alt="">
+                        <p>Criar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <div class="silve" id="raro">
+            <div class="pop-header">
+                <img src="IMG/Group 21.png" alt="">
+                <button class="bot" onclick="fecha('silve')">&times;</button>
+            </div>
+            <div class="legenda">
+                <p>Agenda consulta</p>
+            </div>
+            <div class="puts">
+                <div class="inpu">
+                    <div>
+                        <h3>Nome do paciente</h3>
+                        <input type="text" placeholder="Nome do paciente">
+                    </div>
+                    <div>
+                        <h3>Nome do médico</h3>
+                        <input type="text" placeholder="Nome do médico">
+                    </div>
+                </div>
+
+                <div class="flet">
+                    <div>
+                        <h3>Especialidade da consulta</h3>
+                        <select>
+                            <option value="0">Seleciona</option>
+                            <option value="1">Neurologia</option>
+                            <option value="2">Neuropediatria</option>
+                            <option value="3">Psicologia</option>
+                            <option value="4">Otorrinolaringologia</option>
+                            <option value="5">Neurologia</option>
+                            <option value="6">Reumatologia</option>
+                            <option value="7">Odontologia</option>
+                            <option value="8">Gastrenterologia</option>
+                            <option value="9">Dermatologia</option>
+                            <option value="10">Radiologia</option>
+                        </select>
+                    </div>
+                    <div>
+                        <h3>Data da consulta</h3>
+                        <input type="date">
+                    </div>
+                </div>
+
+                <div class="put-text">
+                    <h3>Descrição</h3>
+                    <textarea name="area" cols="30" rows="10" placeholder="Descrição"></textarea>
+                </div>
+
+                <div class="put-bot">
+                    <input type="submit" value="Agenda">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="falcon" id="con">
+            <div class="pop-header">
+                <img src="IMG/Group 21.png" alt="">
+                <button class="bot" onclick="fecha('falcon')">&times;</button>
+            </div>
+            <div class="cura">
+                <div class="procura">
+                    <input type="text" placeholder="Procura no Historico">
+                    <button stype="submit">
+                        <img src="IMG/procura.png">
+                    </button>
+                </div>
+
+                <div class="search">
+                    <input type="submit" value="Pesquisa">
+                </div>
+
+                <div class="resultado">
+                    <div class="resul">
+                        <img src="IMG/Caderno-icon-adm.png" alt="">
+                        <div class="formula" id="tigo">
+                            <h5>Pedro Rochedo Dos Santos</h5>
+                            <p><span>Realizada 12/10/2020 Horário 12:00</span> | <span>CPF: 123.456.789-01</span></p>
+                        </div>
+                    </div>
+
+                    <div class="consulta">
+                        <input type="submit" value="Ver detalhes">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div>
+        <div class="chilo" id="xerox">
+            <div class="pop-header">
+                <img src="IMG/Group 21.png" alt="">
+                <button class="bot" onclick="fecha('chilo')">&times;</button>
+            </div>
+            <div class="read">
+                <p>Agenda do médico Henrique</p>
+            </div>
+
+            <div class="hope">
+                <div class="resultado" id="rumo">
+                    <div class="resul">
+                        <img src="IMG/Caderno-icon-adm.png" alt="">
+                        <div class="formula">
+                            <h5>Pedro Rochedo Dos Santos</h5>
+                            <p><span>Hoje 12:00</span> | <span>CPF: 123.456.789-01</span></p>
+                        </div>
+                    </div>
+
+                    <div class="consulta">
+                        <input type="submit" value="Detalhes">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <div class="net" id="aspnet">
+            <div class="pop-header">
+                <img src="IMG/Group 21.png" alt="">
+                <button class="bot" onclick="fecha('net')">&times;</button>
+            </div>
+            <div class="cura">
+                <div class="procura">
+                    <input type="text" placeholder="Procura por prontuário">
+                    <button stype="submit">
+                        <img src="IMG/search.png">
+                    </button>
+                </div>
+
+                <div class="search">
+                    <input type="submit" value="Pesquisa">
+                </div>
+
+                <div class="resultado">
+                    <div class="resul">
+                        <img id="imagem" src="IMG/Caderno-icon-adm.png" alt="">
+                        <div class="formula">
+                            <h5>Pedro Rochedo Dos Santos</h5>
+                            <p><span>Data da cconsulta 12/20/2020</span> | <span>CPF: 123.456.789-01</span></p>
+                        </div>
+                    </div>
+
+                    <div class="consulta">
+                        <input type="submit" value="Detalhes">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3>Sp<span>Medical Group</span></h3>
+
+            <p class="footer-links">
+                <a href="#" class="link-1">Home</a>
+
+                <a href="#">Login</a>
+
+                <a href="#">Contatos</a>
+
+                <a href="#">Informações</a>
+
+            </p>
+
+            <p class="footer-company-name">Sp Medical Group © 2020</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div class="rune">
+                <div class="circ" id="dev">
+                    <img src="IMG/develope.png" alt="">
+                </div>
+                <p id="paragrafo1"><span>Desenvolvedor</span> Henrique Silva</p>
+            </div>
+
+            <div class="rune">
+                <div class="circ">
+                    <img src="IMG/phone.png" alt="">
+                </div>
+                <p id="paragrafo2"> (11) 9876-54321
+                    <br>(11) 1234-5678</p>
+            </div>
+
+            <div class="rune">
+                <div class="circ">
+                    <img src="IMG/email.png" alt="">
+                </div>
+                <p id="paragrafo3"><a href="#">faleconosco@SpMedGroup.com.br</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>sobre</span> Um projeto desenvolvidor Por Henrique Silva,Técnico em desenvolvimento de sistemas do Senai,esse projeto consiste em site para redes de clínicas medicas de São Paulo com nome Sp Medical Group.
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="https://pt-br.facebook.com/" target="blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/explore" target="blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://br.linkedin.com/" target="blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/?hl=pt-br" target="blank"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>

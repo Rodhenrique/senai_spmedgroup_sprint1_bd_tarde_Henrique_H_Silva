@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="Pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Language" content="pt-br, en, fr, it">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=greek" rel="stylesheet">
+    <script src="Script.js"></script>
+    <link rel="icon" href="IMG/logo_spmedgroup_v1.png" />
+    <title>SpMedGroup</title>
+</head>
+
+<body>
+    <div class="geral">
+
+        <div class="geral" id="logo">
+            <img src="IMG/Group 21.png" alt="sloga">
+        </div>
+
+        <div id="icon">
+            <a href="https://pt-br.facebook.com/" target="blank"><img src="IMG/Icon-Facebook.png" alt=""></a>
+            <a href="https://twitter.com/explore" target="blank"><img src="IMG/Icon-Twitter.png" alt=""></a>
+            <a href="https://br.linkedin.com/" target="blank"> <img src="IMG/Icon-Linkedin.png" alt=""></a>
+            <a href="https://www.instagram.com/?hl=pt-br" target="blank"><img src="IMG/Icon-Instragram.png" alt=""></a>
+        </div>
+
+        <div class="geral" id="logo-clock">
+            <img src="IMG/ClockLogo.png" alt="">
+            <p>Horários de atendimento
+                <br><span> Segunda - Sexta 08:00 - 19:00
+                    <br>Sábado 08:00 - 18:00</span>
+            </p>
+        </div>
+
+        <div class="geral" id="contatos">
+            <img src="IMG/image 3.png" alt="">
+            <p>Telefones para contato
+                <span>
+                    <br>(11) 9876-54321
+                    <br>(11) 1234-5678
+                </span>
+            </p>
+        </div>
+
+        <div class="geral" id="local">
+            <img src="IMG/Local-Logo.png" alt="">
+            <p>Onde nós encontra</p>
+        </div>
+    </div>
+
+    <div id="faixa"></div>
+
+    <div id="banner">
+        <img src="IMG/Banner.png" alt="">
+    </div>
+
+    <div id="best">
+        <div id="nome">
+            <h1>Olá Administrador Henrique</h1>
+        </div>
+        <div id="sair">
+            <a href="Index.html">Sair</a>
+        </div>
+    </div>
+
+    <div>
+        <div class="acerto" id="round1">
+
+            <div class="celula" id="record1">
+                <div class="tick" id="record2">
+                    <p>Cadastra usuário </p>
+                </div>
+                <p>Cadastrar um novo usuário no
+                    <br> banco de dados por ser
+                    <br> um administrador,medico ou
+                    <br> paciente. </p>
+                <img src="IMG/Usuario-adm.png" alt="">
+
+                <div class="botoes" onclick="abrir('pop','alk')">
+                    <input type="submit" value="Cadastrar">
+                </div>
+            </div>
+
+            <div class="celula" id="record3">
+                <div class="tick" id="record4">
+                    <p>Agenda consulta </p>
+                </div>
+                <p>Agenda uma consulta com um
+                    <br> médico para um paciente da
+                    <br> clínica.
+                </p>
+                <img src="IMG/Computador-adm.png" alt="">
+                <div class="botoes" onclick="abrir('plaza','alt')">
+                    <input type="submit" value="Agenda">
+                </div>
+            </div>
+        </div>
+        <div id="compost">
+            <img src="IMG/Logo-Dashboardm-adm.png" alt="">
+        </div>
+
+        <div class="acerto" id="round2">
+
+            <div class="celula" id="record5">
+                <div class="tick" id="record6">
+                    <p>Consulta atendimentos </p>
+                </div>
+                <p>Consulta um atendimento para
+                    <br> ver informações sobre ele ou
+                    <br> cancelar e troca o status do
+                    <br> atendimento.
+                </p>
+                <img src="IMG/Prontuario-adm.png" alt="">
+
+                <div class="botoes" onclick="abrir('pesquisa','psi')">
+                    <input type="submit" value="Consulta">
+                </div>
+            </div>
+
+            <div class="celula" id="record7">
+                <div class="tick" id="record8">
+                    <p>Estabelecimentos </p>
+                </div>
+                <p>Busca uma clinica da rede o
+                    <br> endereço ou cadastra uma
+                    <br> nova clínica da rede.
+                </p>
+                <img src="IMG/Predio-adm.png" alt="">
+
+                <div class="botoes" onclick="abrir('shot','lide')">
+                    <input type="submit" value="Busca">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="slogan">
+        <h1>Sp <span>Medical Group</span></h1>
+    </div>
+
+
+    <div class="popup">
+        <div class="pop" id="alk">
+            <div class="pop-header">
+                <img src="IMG/Group 21.png" alt="">
+                <button class="bot" onclick="fecha('pop')">&times;</button>
+            </div>
+
+            <div class="pop-text">
+                <p>Selecione uma das opçoes abaixo para cadastra
+                    <br> um novo usuário.
+                </p>
+            </div>
+            <div>
+                <div class="fig">
+                    <div class="person" id="personal1" onclick="abrir('rox','tiger')">
+                        <img src="IMG/Usuario-icon-adm.png" alt="">
+                        <p>Usuário</p>
+                    </div>
+                    <div class="person" id="personal2" onclick="abrir('ruber','atex')">
+                        <img src="IMG/Medico-icon-adm.png" alt="">
+                        <p>médico</p>
+                    </div>
+                    <div class="person" id="personal3" onclick="abrir('super','ritmo')">
+                        <img src="IMG/Administador-icon-adm.png" alt="">
+                        <p>Administrador</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup">
+        <div class="shot" id="lide">
+            <div class="pop-header">
+                <img src="IMG/Group 21.png" alt="">
+                <button class="bot" onclick="fecha('shot')">&times;</button>
+            </div>
+
+            <div class="pop-text">
+                <p>Selecione uma das opçoes abaixo.</p>
+            </div>
+            <div>
+                <div class="fig">
+                    <div class="person" id="slider1" onclick="abrir('mega','giro')">
+                        <img src="IMG/Local-icon-adm.png" alt="">
+                        <p>Adiciona</p>
+                    </div>
+                    <div class="person" id="slider2" onclick="abrir('atmega','yuh')">
+                        <img src="IMG/Mapa-icon-adm.png" alt="">
+                        <p>Busca</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="plaza" id="alt">
+            <div class="pop-header">
+                <img src="IMG/Group 21.png" alt="">
+                <button class="bot" onclick="fecha('plaza')">&times;</button>
+            </div>
+            <div class="legenda">
+                <p>Agenda consulta</p>
+            </div>
+            <div class="puts">
+                <div class="inpu">
+                    <div>
+                        <h3>Nome do paciente</h3>
+                        <input type="text" placeholder="Nome do paciente">
+                    </div>
+                    <div>
+                        <h3>Nome do médico</h3>
+                        <input type="text" placeholder="Nome do médico">
+                    </div>
+                </div>
+
+                <div class="flet">
+                    <div>
+                        <h3>situação</h3>
+                        <select>
+                            <option value="0">Seleciona situação</option>
+                            <option value="1">Pendente</option>
+                            <option value="2">Cancelada</option>
+                            <option value="3">Realizada</option>
+                        </select>
+                    </div>
+                    <div>
+                        <h3>Data da consulta</h3>
+                        <input type="date">
+                    </div>
+                </div>
+
+                <div class="put-text">
+                    <h3>Descrição</h3>
+                    <textarea name="area" cols="30" rows="10" placeholder="Descrição"></textarea>
+                </div>
+
+                <div class="put-bot">
+                    <input type="submit" value="Agenda">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <div class="pesquisa" id="psi">
+            <div class="pop-header">
+                <img src="IMG/Group 21.png" alt="">
+                <button class="bot" onclick="fecha('pesquisa')">&times;</button>
+            </div>
+            <div class="cura">
+                <div class="procura">
+                    <input type="text" placeholder="Procura por consulta">
+                    <button stype="submit">
+                        <img src="IMG/search.png">
+                    </button>
+                </div>
+
+                <div class="search">
+                    <input type="submit" value="Pesquisa">
+                </div>
+
+                <div class="resultado">
+                    <div class="resul">
+                        <img src="IMG/Caderno-icon-adm.png" alt="">
+                        <div class="formula">
+                            <h5>Pedro Rochedo Dos Santos</h5>
+                            <p><span>13 de abril 2020 13:00</span> | <span>CPF: 123.456.789-01</span></p>
+                        </div>
+                    </div>
+
+                    <div class="consulta">
+                        <input type="submit" value="Ver Consulta">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <div class="super" id="ritmo">
+            <div class="pop-header">
+                <img src="IMG/Group 21.png" alt="">
+                <button class="bot" onclick="fecha('super')">&times;</button>
+            </div>
+            <div class="admin">
+                <p>Cadastra administrador</p>
+            </div>
+            <div class="puts">
+                <div class="inpu">
+                    <div>
+                        <h3>Nome do Administrador</h3>
+                        <input type="text" placeholder="Nome do Administrador">
+                    </div>
+                </div>
+
+                <div class="flet">
+                    <div>
+                        <h3>Telefone</h3>
+                        <input type="tel" placeholder="Telefone">
+                    </div>
+                    <div>
+                        <h3>Data de nascimento</h3>
+                        <input type="date">
+                    </div>
+                </div>
+
+                <div class="inpu">
+                    <div>
+                        <h3>Endereço</h3>
+                        <input type="text" placeholder="Endereço">
+                    </div>
+                </div>
+
+                <div class="flet">
+                    <div>
+                        <h3>CPF</h3>
+                        <input type="text" placeholder="Telefone">
+                    </div>
+                    <div>
+                        <h3>RG</h3>
+                        <input type="text" placeholder="RG">
+                    </div>
+                </div>
+
+                <div class="inpu">
+                    <div>
+                        <h3>Email</h3>
+                        <input type="text" placeholder="Email">
+                    </div>
+                </div>
+
+                <div class="flet">
+                    <div>
+                        <h3>Senha</h3>
+                        <input type="tel" placeholder="Senha">
+                    </div>
+                    <div>
+                        <h3>Confirma senha</h3>
+                        <input type="text" placeholder="Confirma senha">
+                    </div>
+                </div>
+
+                <div class="put-bot">
+                    <input type="submit" value="Cadastra">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="mega" id="giro">
+            <div class="pop-header">
+                <img src="IMG/Group 21.png" alt="">
+                <button class="bot" onclick="fecha('mega')">&times;</button>
+            </div>
+            <div class="legenda">
+                <p>Adiciona clínica</p>
+            </div>
+            <div class="puts">
+                <div class="inpu">
+                    <div>
+                        <h3>Nome fantasia</h3>
+                        <input type="text" placeholder="Nome fantasia">
+                    </div>
+                </div>
+
+                <div class="flet">
+                    <div>
+                        <h3>Horário de abertura</h3>
+                        <input type="text" placeholder="Horário de abertura">
+                    </div>
+                    <div>
+                        <h3>Horário de fechamento</h3>
+                        <input type="text" placeholder="Horário de fechamento">
+                    </div>
+                </div>
+
+                <div class="flet">
+                    <div>
+                        <h3>CNPJ</h3>
+                        <input type="text" placeholder="CNPJ">
+                    </div>
+                    <div>
+                        <h3>Razão social</h3>
+                        <input type="text" placeholder="Razão social">
+                    </div>
+                </div>
+
+                <div class="inpu">
+                    <div>
+                        <h3>Endereço</h3>
+                        <input type="text" placeholder="Endereço">
+                    </div>
+                </div>
+
+                <div class="put-bot">
+                    <input type="submit" value="Adiciona clínica ">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="atmega" id="yuh">
+            <div class="pop-header">
+                <img src="IMG/Group 21.png" alt="">
+                <button class="bot" onclick="fecha('atmega')">&times;</button>
+            </div>
+            <div class="cura">
+                <div class="procura">
+                    <input type="text" placeholder="Procura por clínica">
+                    <button stype="submit">
+                        <img src="IMG/search.png">
+                    </button>
+                </div>
+
+                <div class="search">
+                    <input type="submit" value="Pesquisa">
+                </div>
+
+                <div class="resultado">
+                    <div class="resul">
+                        <img id="imagem" src="IMG/Predio-adm.png" alt="">
+                        <div class="formula">
+                            <h5>Rua Barão Do Sul,539</h5>
+                            <p><span>Clínica</span> | <span>CEP: 98765-432</span></p>
+                        </div>
+                    </div>
+
+                    <div class="consulta">
+                        <input type="submit" value="Ver clínica">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="ruber" id="atex">
+            <div class="pop-header">
+                <img src="IMG/Group 21.png" alt="">
+                <button class="bot" onclick="fecha('ruber')">&times;</button>
+            </div>
+            <div class="legenda">
+                <p>Cadastra médico</p>
+            </div>
+            <div class="puts">
+                <div class="inpu">
+                    <div>
+                        <h3>Nome do médico</h3>
+                        <input type="text" placeholder="Nome do médico">
+                    </div>
+                </div>
+
+                <div class="flet">
+                    <div>
+                        <h3>Telefone</h3>
+                        <input type="text" placeholder="Telefone">
+                    </div>
+                    <div>
+                        <h3>Data de nascimento</h3>
+                        <input type="date">
+                    </div>
+                </div>
+
+                <div class="inpu">
+                    <div>
+                        <h3>Endereço</h3>
+                        <input type="text" placeholder="Endereço">
+                    </div>
+                </div>
+
+                <div class="flet">
+                    <div>
+                        <h3>Telefone</h3>
+                        <select>
+                            <option value="0">Seleciona</option>
+                            <option value="1">Neurologia</option>
+                            <option value="2">Neuropediatria</option>
+                            <option value="3">Psicologia</option>
+                            <option value="4">Otorrinolaringologia</option>
+                            <option value="5">Neurologia</option>
+                            <option value="6">Reumatologia</option>
+                            <option value="7">Odontologia</option>
+                            <option value="8">Gastrenterologia</option>
+                            <option value="9">Dermatologia</option>
+                            <option value="10">Radiologia</option>
+                        </select>
+                    </div>
+                    <div>
+                        <h3>RG</h3>
+                        <input type="text" placeholder="Ex:12345678-9">
+                    </div>
+                </div>
+
+                <div class="inpu">
+                    <div>
+                        <h3>Email</h3>
+                        <input type="text" placeholder="Email">
+                    </div>
+                </div>
+
+                <div class="flet">
+                    <div>
+                        <h3>Senha</h3>
+                        <input type="text" placeholder="Senha">
+                    </div>
+                    <div>
+                        <h3>Confirma senha</h3>
+                        <input type="text" placeholder="Confirma senha">
+                    </div>
+                </div>
+
+                <div class="put-bot">
+                    <input type="submit" value="Cadastra">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <div class="rox" id="tiger">
+            <div class="pop-header">
+                <img src="IMG/Group 21.png" alt="">
+                <button class="bot" onclick="fecha('rox')">&times;</button>
+            </div>
+            <div class="rot">
+                <p>Cadastra paciente</p>
+            </div>
+            <div class="puts">
+                <div class="inpu">
+                    <div>
+                        <h3>Nome do paciente</h3>
+                        <input type="text" placeholder="Nome do paciente">
+                    </div>
+                </div>
+
+                <div class="flet">
+                    <div>
+                        <h3>Telefone</h3>
+                        <input type="text" placeholder="Telefone">
+                    </div>
+                    <div>
+                        <h3>Data de nascimento</h3>
+                        <input type="date">
+                    </div>
+                </div>
+
+                <div class="inpu">
+                    <div>
+                        <h3>Endereço</h3>
+                        <input type="text" placeholder="Endereço">
+                    </div>
+                </div>
+
+                <div class="flet">
+                    <div>
+                        <h3>CPF</h3>
+                        <input type="text" placeholder="9876543-21">
+                    </div>
+                    <div>
+                        <h3>RG</h3>
+                        <input type="text" placeholder="Ex:12345678-9">
+                    </div>
+                </div>
+
+                <div class="inpu">
+                    <div>
+                        <h3>Email</h3>
+                        <input type="text" placeholder="Email">
+                    </div>
+                </div>
+
+                <div class="flet">
+                    <div>
+                        <h3>Senha</h3>
+                        <input type="text" placeholder="Senha">
+                    </div>
+                    <div>
+                        <h3>Confirma senha</h3>
+                        <input type="text" placeholder="Confirma senha">
+                    </div>
+                </div>
+
+                <div class="put-bot">
+                    <input type="submit" value="Cadastra">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="overlay"></div>
+
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3>Sp<span>Medical Group</span></h3>
+
+            <p class="footer-links">
+                <a href="#" class="link-1">Home</a>
+
+                <a href="#">Login</a>
+
+                <a href="#">Contatos</a>
+
+                <a href="#">Informações</a>
+
+            </p>
+
+            <p class="footer-company-name">Sp Medical Group © 2020</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div class="rune">
+                <div class="circ" id="dev">
+                    <img src="IMG/develope.png" alt="">
+                </div>
+                <p id="paragrafo1"><span>Desenvolvedor</span> Henrique Silva</p>
+            </div>
+
+            <div class="rune">
+                <div class="circ">
+                    <img src="IMG/phone.png" alt="">
+                </div>
+                <p id="paragrafo2"> (11) 9876-54321
+                    <br>(11) 1234-5678</p>
+            </div>
+
+            <div class="rune">
+                <div class="circ">
+                    <img src="IMG/email.png" alt="">
+                </div>
+                <p id="paragrafo3"><a href="#">faleconosco@SpMedGroup.com.br</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>sobre</span> Um projeto desenvolvidor Por Henrique Silva,Técnico em desenvolvimento de sistemas do Senai,esse projeto consiste em site para redes de clínicas medicas de São Paulo com nome Sp Medical Group.
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="https://pt-br.facebook.com/" target="blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/explore" target="blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://br.linkedin.com/" target="blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/?hl=pt-br" target="blank"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>
